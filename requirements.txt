@@ -1,0 +1,17 @@
+base58==2.1.0
+bitcoinaddress==0.1.5
+btc-address-dump==0.2.9
+cashaddress==1.0.6
+certifi==2021.5.30
+cffi==1.14.5
+chardet==4.0.0
+cryptography==3.4.7
+ecdsa==0.17.0
+idna==2.10
+pyasn1==0.4.8
+pycparser==2.20
+PyYAML==5.4.1
+requests==2.25.1
+rsa==4.7.2
+six==1.16.0
+urllib3==1.26.6
