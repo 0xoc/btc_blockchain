@@ -103,7 +103,10 @@ def get_block_data_by_hash(block_hash):
             raise InvalidBlockHashException("Invalid Block hash")
 
 
-def get_hashes_in_block(block_data):
+def get_hashes_in_block(block_data, only_block_hash=False):
+    if only_block_hash:
+        return [block_data.get('hash'), ]
+
     hashes_in_block = [block_data.get('mrkl_root'), block_data.get('hash')]
     for _tx in block_data.get('tx'):
         hashes_in_block.append(_tx.get('hash'))

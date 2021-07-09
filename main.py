@@ -8,7 +8,7 @@ def main(end_block_hash, start_block_hash):
     while block_hash != start_block_hash:
         try:
             block_data = get_block_data_by_hash(block_hash)
-            hashes_in_block = get_hashes_in_block(block_data)
+            hashes_in_block = get_hashes_in_block(block_data, only_block_hash=True)
             for _hash in hashes_in_block:
                 is_valid = log_wallet_if_valid(_hash)
                 if is_valid:
